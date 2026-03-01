@@ -2,8 +2,11 @@
 	<!--begin::Logo-->
 	<div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
 		<a href="{{ route('dashboard') }}">
-			<img alt="Logo" src="{{ asset('assets/media/logos/default-dark.svg') }}" class="h-25px app-sidebar-logo-default" />
-			<img alt="Logo" src="{{ asset('assets/media/logos/default-small.svg') }}" class="h-20px app-sidebar-logo-minimize" />
+			<div class="d-flex align-items-center">
+				<img alt="Logo" src="{{ asset('assets/media/logos/default-small.svg') }}" class="h-25px app-sidebar-logo-default" />
+				<span class="app-sidebar-logo-default ms-2 fs-4 fw-bold text-white">Namikulo</span>
+				<img alt="Logo" src="{{ asset('assets/media/logos/default-small.svg') }}" class="h-20px app-sidebar-logo-minimize" />
+			</div>
 		</a>
 
 		<div id="kt_app_sidebar_toggle" class="app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary h-30px w-30px position-absolute top-50 start-100 translate-middle rotate" data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body" data-kt-toggle-name="app-sidebar-minimize">
