@@ -48,7 +48,7 @@ class Testimonials extends Model
 
     public function images()
     {
-        return $this->hasMany(TestimonialsImages::class);
+        return $this->hasMany(TestimonialsImages::class, 'testimonial_id');
     }
 
     /*

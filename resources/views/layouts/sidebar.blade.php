@@ -33,7 +33,7 @@
 					</div>
 
 					<div class="menu-item">
-						<a class="menu-link" href="{{ url('/categories') }}">
+						<a class="menu-link" href="{{ route('categories.index') }}">
 							<span class="menu-icon">
 								<i class="ki-duotone ki-category fs-2">
 									<span class="path1"></span>
@@ -45,7 +45,7 @@
 					</div>
 
 					<div class="menu-item">
-						<a class="menu-link" href="{{ url('/portfolios') }}">
+						<a class="menu-link" href="{{ route('portfolios.index') }}">
 							<span class="menu-icon">
 								<i class="ki-duotone ki-briefcase fs-2">
 									<span class="path1"></span>
@@ -59,7 +59,7 @@
 					</div>
 
 					<div class="menu-item">
-						<a class="menu-link" href="{{ url('/testimonials') }}">
+						<a class="menu-link {{ request()->routeIs('testimonials.*') ? 'active' : '' }}" href="{{ route('testimonials.index') }}">
 							<span class="menu-icon">
 								<i class="ki-duotone ki-message-text-2 fs-2">
 									<span class="path1"></span>

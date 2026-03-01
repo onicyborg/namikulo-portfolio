@@ -25,6 +25,6 @@ class TestimonialsImages extends Model
 
     public function testimonial()
     {
-        return $this->belongsTo(Testimonials::class);
+        return $this->belongsTo(Testimonials::class, 'testimonial_id');
     }
 }

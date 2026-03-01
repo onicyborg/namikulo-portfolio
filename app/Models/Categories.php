@@ -9,6 +9,8 @@ class Categories extends Model
 {
     use HasUuids;
 
+    protected $table = 'categories';
+
     protected $keyType = 'string';
     public $incrementing = false;
 
@@ -16,6 +18,12 @@ class Categories extends Model
         'name',
         'slug',
         'description',
+        'is_active',
+        'created_by',
+    ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
     ];
 
     /*

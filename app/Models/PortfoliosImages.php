@@ -31,6 +31,6 @@ class PortfoliosImages extends Model
 
     public function portfolio()
     {
-        return $this->belongsTo(Portfolios::class);
+        return $this->belongsTo(Portfolios::class, 'portfolio_id');
     }
 }

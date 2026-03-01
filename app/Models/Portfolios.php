@@ -50,7 +50,7 @@ class Portfolios extends Model
 
     public function images()
     {
-        return $this->hasMany(PortfoliosImages::class);
+        return $this->hasMany(PortfoliosImages::class, 'portfolio_id');
     }
 
     /*
