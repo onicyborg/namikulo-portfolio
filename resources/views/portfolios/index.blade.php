@@ -64,12 +64,12 @@
 						@foreach ($portfolios as $portfolio)
 							@php
 								$thumbnail = $portfolio->images->firstWhere('is_thumbnail', true) ?? $portfolio->images->first();
-								$thumbnailUrl = $thumbnail ? asset('storage/' . $thumbnail->image_path) : asset('assets/media/avatars/blank.png');
+								$thumbnailUrl = $thumbnail ? url('storage/' . $thumbnail->image_path) : url('assets/media/avatars/blank.png');
 								$previewImages = $portfolio->images
 									->map(function ($img) {
 										return [
 											'id' => $img->id,
-											'url' => asset('storage/' . $img->image_path),
+											'url' => url('storage/' . $img->image_path),
 											'alt' => $img->alt_text,
 											'is_thumbnail' => (bool) $img->is_thumbnail,
 										];

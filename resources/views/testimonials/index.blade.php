@@ -67,7 +67,7 @@
 									->map(function ($img) {
 										return [
 											'id' => $img->id,
-											'url' => asset('storage/' . $img->image_path),
+											'url' => url('storage/' . $img->image_path),
 										];
 									})
 									->values();
