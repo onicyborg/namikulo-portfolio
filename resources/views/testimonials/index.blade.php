@@ -80,7 +80,7 @@
 									</div>
 								</td>
 								<td>
-									<span class="text-gray-900 fw-bold d-block mb-1 fs-6">{{ $testimonial->category?->name }}</span>
+									<span class="text-gray-900 fw-bold d-block mb-1 fs-6">{{ $testimonial->category?->name ?? '-' }}</span>
 								</td>
 								<td>
 									<span class="text-gray-900 fw-bold d-block mb-1 fs-6">{{ $testimonial->rating ?? '-' }}</span>
